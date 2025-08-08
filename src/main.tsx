@@ -7,14 +7,16 @@ import App from './App.tsx'
 
 const router = createBrowserRouter([
   {
-    path: '/',
     element: (
       <ChakraProvider>
         <App />
       </ChakraProvider>
     ),
     children: [
-      
+      {
+        path: '/',
+        
+      }
     ]
   }
 ])
